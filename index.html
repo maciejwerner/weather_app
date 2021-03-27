@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> WEATHER API 2 </title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="css.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- JAVASCRIPT -->
+  <script async src="app.js"></script>
+
+</head>
+
+<body class="body">
+
+  <div class="loader">
+    <div class="dotContainer">
+      <span class="span span--loader span--loader-title">Loading data</span>
+    
+      <span class="span span--loader span--loader-dots"></span>
+      <span class="span span--loader span--loader-dots"></span>
+      <span class="span span--loader span--loader-dots"></span>
+    </div>
+  </div>
+
+  <header class="header">
+    <nav class="navigation container">
+    
+      <button class="btn btn--close">
+        <span class="span span--line"></span>
+      </button>
+    
+      <form action="" class="form">
+    
+        <div class="form__item form__item--search">
+          <span class="span span--icon span--icon--search fas fa-search"></span>
+    
+          <div class="search-box">
+            <input type="text" class="input input-search" id="search-input" autocomplete="off" required maxlength="45"
+              title="Can't read numbers">
+            <label for="search-input" class="label">
+              <span class="span span--label"> search location </span>
+            </label>
+          </div>
+    
+        </div>
+    
+        <div class="form__item">
+          <button class="btn btn--submit" type="submit" aria-controls="search input">Search</button>
+        </div>
+    
+      </form>
+    
+      <div class="input-validation">
+        <p class="par">Please fill in the field properly</p>
+      </div>
+    
+    
+      <h3 class="location__header">
+        History:
+      </h3>
+
+      <ul class="location__list">
+    
+      </ul>
+    
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!-- SECTION ASIDE -->
+    <section class="section__main--aside">
+      <div class="container container-aside">
+      
+        <div class="location__buttons">
+      
+          <button class="btn btn--search" type="button" aria-controls="Search menu">
+            Search for places
+          </button>
+      
+          <button class="btn btn--geo">
+            <span class="span fas fa-location-arrow"> </span>
+          </button>
+      
+        </div>
+      
+        <div class="location__information">
+            
+        </div>
+      
+      </div>
+
+    </section>
+
+    <!-- SECTION FORECAST -->
+    <section class="section__main--forecast">
+
+      <!-- CONTAINER -->
+      <div class="container container__forecast">
+      
+        <!-- TEMPERATURE BUTTONS -->
+        <div class="temp__buttons">
+
+        </div>
+      
+        <!-- FIVE DAYS FORECAST -->
+        <div class="forecast__container">
+
+        </div>
+
+        <!-- HIGHTLIGHTS -->
+        <div class="forecast__hightlights">
+
+          <h3 class="hightlights__title">Hightlights</h3>
+
+          <div class="hightlights__buttons">
+            <ul class="hightlights_list">
+            
+            </ul>
+          </div>
+          
+          <div class="hightlights__wrapper">
+
+          </div>
+                
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+        
+        </div>
+      
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+
+</html>
