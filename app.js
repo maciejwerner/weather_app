@@ -16,8 +16,6 @@ submitBtn.addEventListener("click", searchLocation);
 const cors = "https://cors-anywhere-venky.herokuapp.com/"
 const url = `${cors}https://www.metaweather.com/api/`;
 
-// https://obscure-mesa-98003.herokuapp.com/https://www.metaweather.com/api/location/search/?query=${city}
-
 let city = "london";
 const citiesArr = [];
 
