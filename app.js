@@ -355,9 +355,9 @@ function createItemHightlights(val) {
 function createFooter() {
   return document.querySelector(".footer").innerHTML = `
     <span class="span span--footer"> created by </span>
-    <a href="#" class="link link--footer"> <strong>Maciej Werner</strong></a>
+    <a href="https://github.com/maciejwerner/weather_app" target="_blank" class="link link--footer"> <strong>Maciej Werner</strong></a>
     <span class="span span--footer"> - </span>
-    <a href="#" class="link link--footer"> devChallenges.io</a>
+    <a href="https://devchallenges.io/" target="_blank" class="link link--footer"> devChallenges.io</a>
   `;
 }
 
